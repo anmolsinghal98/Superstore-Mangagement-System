@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="480.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SignUp">
+    <children>
+        <HBox alignment="CENTER" layoutX="386.0" layoutY="38.0" prefHeight="75.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#backPressed" prefHeight="59.0" prefWidth="148.0"
+                        styleClass="contact-us" stylesheets="@styles.css" text="Back"/>
+            </children>
+        </HBox>
+        <GridPane layoutX="135.0" layoutY="167.0" prefHeight="164.0" prefWidth="359.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="145.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="191.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label prefHeight="14.0" prefWidth="174.0" text="Enter Name:"/>
+                <Label prefHeight="14.0" prefWidth="174.0" text="Enter Username:" GridPane.rowIndex="2"/>
+                <Label text="Enter Password:" GridPane.rowIndex="3"/>
+                <Label text="Re-Enter Password:" GridPane.rowIndex="4"/>
+                <Label prefHeight="17.0" prefWidth="138.0" text="Enter Password Hint:" GridPane.rowIndex="5"/>
+                <Label prefHeight="14.0" prefWidth="174.0" text="Enter Mobile:" GridPane.rowIndex="1"/>
+
+                <TextField fx:id="name" prefHeight="23.0" prefWidth="197.0" GridPane.columnIndex="1"/>
+                <TextField fx:id="mobile" prefHeight="23.0" prefWidth="197.0" GridPane.columnIndex="1"
+                           GridPane.rowIndex="1"/>
+                <TextField fx:id="username" prefHeight="23.0" prefWidth="197.0" GridPane.columnIndex="1"
+                           GridPane.rowIndex="2"/>
+                <PasswordField fx:id="pass" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <PasswordField fx:id="rePass" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                <TextField fx:id="passHint" prefHeight="60.0" prefWidth="197.0" GridPane.columnIndex="1"
+                           GridPane.rowIndex="5"/>
+
+            </children>
+        </GridPane>
+        <HBox alignment="CENTER" layoutX="175.0" layoutY="372.0" prefHeight="75.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#signUp" prefHeight="71.0" prefWidth="158.0"
+                        styleClass="choose-role-button" stylesheets="@styles.css" text="SIGN UP"/>
+            </children>
+        </HBox>
+        <ImageView fitHeight="150.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Logo.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

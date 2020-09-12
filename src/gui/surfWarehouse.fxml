@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="496.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.surfWarehouse">
+    <children>
+        <TextField layoutX="189.0" layoutY="57.0" prefHeight="27.0" prefWidth="223.0" promptText="Location Details..." />
+        <Button layoutX="507.0" layoutY="21.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="49.0" prefWidth="71.0" styleClass="contact-us" stylesheets="@styles.css" text="Back" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Logo.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="table" layoutX="21.0" layoutY="130.0" prefHeight="319.0" prefWidth="566.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="104.0" text="Warehouse ID" />
+                <TableColumn fx:id="name" prefWidth="230.0" text="Name of The Warehouse" />
+                <TableColumn fx:id="loc" prefWidth="231.0" text="Warehouse Location" />
+            </columns>
+        </TableView>
+        <Button layoutX="255.0" layoutY="450.0" mnemonicParsing="false" onAction="#HandleContinue" styleClass="choose-role-button" stylesheets="@styles.css" text="Continue" />
+    </children>
+</AnchorPane>

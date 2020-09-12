@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="446.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GuestScreen">
+   <children>
+      <HBox alignment="CENTER" layoutX="394.0" layoutY="14.0" prefHeight="68.0" prefWidth="200.0">
+         <children>
+            <ChoiceBox fx:id="options" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <Button layoutX="457.0" layoutY="189.0" mnemonicParsing="false" prefHeight="175.0" prefWidth="108.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Cart" />
+      <Button layoutX="41.0" layoutY="200.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="150.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Our Stores" />
+      <Button layoutX="254.0" layoutY="200.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="150.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Add Funds" />
+      <Button layoutX="41.0" layoutY="290.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="150.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Shop By Category" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="254.0" layoutY="290.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="150.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Today's Deals" />
+      <TextField layoutX="179.0" layoutY="117.0" prefHeight="27.0" prefWidth="225.0" promptText="Search Products..." />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

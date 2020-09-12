@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="451.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.cartDisplayScreen">
+   <children>
+      <ChoiceBox layoutX="426.0" layoutY="29.0" prefWidth="150.0" />
+      <Label layoutX="217.0" layoutY="99.0" text="Your Shopping Cart">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="32.0" layoutY="130.0" prefHeight="243.0" prefWidth="387.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="66.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="130.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="101.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="91.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="94.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="S. No." underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Product Name" textAlignment="CENTER" underline="true" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="73.0" text="Quantity" underline="true" GridPane.columnIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Price" underline="true" GridPane.columnIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ListView prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button layoutX="450.0" layoutY="183.0" mnemonicParsing="false" prefHeight="159.0" prefWidth="117.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Proceed To Check Out" textAlignment="CENTER" wrapText="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="461.0" layoutY="130.0" prefHeight="47.0" prefWidth="95.0" text="Total (Rs)" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

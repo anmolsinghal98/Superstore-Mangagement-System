@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="459.0" prefWidth="581.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.WarehouseAdminScreen">
+    <children>
+        <Button layoutX="462.0" layoutY="16.0" mnemonicParsing="false" onAction="#signOut" prefHeight="52.0" prefWidth="111.0" styleClass="contact-us" stylesheets="@styles.css" text="Sign Out" />
+        <Button layoutX="25.0" layoutY="151.0" mnemonicParsing="false" onAction="#insertEntity" prefHeight="59.0" prefWidth="168.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Insert Entities" />
+        <Button layoutX="233.0" layoutY="151.0" mnemonicParsing="false" onAction="#modifyEntity" prefHeight="59.0" prefWidth="168.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Modify Entities" />
+        <Button layoutX="25.0" layoutY="230.0" mnemonicParsing="false" onAction="#deleteEntity" prefHeight="59.0" prefWidth="168.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Delete Entities" />
+        <Button layoutX="233.0" layoutY="230.0" mnemonicParsing="false" onAction="#receivedOrders" prefHeight="59.0" prefWidth="168.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Received Orders" />
+        <Button layoutX="25.0" layoutY="314.0" mnemonicParsing="false" onAction="#accessInventory" prefHeight="59.0" prefWidth="168.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Access Inventory" />
+        <Button layoutX="233.0" layoutY="314.0" mnemonicParsing="false" onAction="#contactWarehouse" prefHeight="59.0" prefWidth="168.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Contact Other Warehouses" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="335.0" layoutY="16.0" mnemonicParsing="false" onAction="#notifications" prefHeight="52.0" prefWidth="111.0" styleClass="contact-us" stylesheets="@styles.css" text="Notifications" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

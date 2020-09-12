@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AccessInventory">
+   <children>
+      <ScrollPane id="categories" layoutX="14.0" layoutY="146.0" prefHeight="292.0" prefWidth="184.0" />
+      <ScrollPane id="subcategories" layoutX="204.0" layoutY="146.0" prefHeight="292.0" prefWidth="192.0" />
+      <ScrollPane id="products" layoutX="402.0" layoutY="146.0" prefHeight="292.0" prefWidth="192.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="232.0" layoutY="61.0" text="Inventory">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="490.0" layoutY="37.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="96.0" styleClass="contact-us" stylesheets="@styles.css" text="Back" />
+   </children>
+</AnchorPane>

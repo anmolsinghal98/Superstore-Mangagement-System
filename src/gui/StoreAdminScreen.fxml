@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="508.0" prefWidth="648.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StoreAdminScreen">
+   <children>
+      <Button layoutX="516.0" layoutY="29.0" mnemonicParsing="false" onAction="#signOut" prefHeight="52.0" prefWidth="111.0" styleClass="contact-us" stylesheets="@styles.css" text="Sign Out" />
+      <Button layoutX="443.0" layoutY="157.0" mnemonicParsing="false" onAction="#insertProduct" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Add Product" />
+      <Button layoutX="443.0" layoutY="246.0" mnemonicParsing="false" onAction="#modifyProduct" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Modify Product" />
+      <Button layoutX="443.0" layoutY="330.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Delete Product" />
+      <Button layoutX="354.0" layoutY="410.0" mnemonicParsing="false" onAction="#receivedOrders" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Received Orders" />
+      <Button layoutX="131.0" layoutY="410.0" mnemonicParsing="false" onAction="#accessInventory" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Access Inventory" />
+      <Button layoutX="235.0" layoutY="330.0" mnemonicParsing="false" onAction="#deleteSubCategory" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Delete Sub-Category" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="25.0" layoutY="330.0" mnemonicParsing="false" onAction="#deleteCategory" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Delete Category" />
+      <Button layoutX="235.0" layoutY="246.0" mnemonicParsing="false" onAction="#modifySubCategory" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Modify Sub-Category" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="25.0" layoutY="246.0" mnemonicParsing="false" onAction="#modifyCategory" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Modify Category" />
+      <Button layoutX="235.0" layoutY="157.0" mnemonicParsing="false" onAction="#insertSubCategory" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Add Sub-Category" />
+      <Button layoutX="25.0" layoutY="157.0" mnemonicParsing="false" onAction="#insertCategory" prefHeight="59.0" prefWidth="179.0" styleClass="shiny-orange" stylesheets="@styles.css" text="Add Category" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="446.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GuestScreen">
+   <children>
+      <HBox alignment="CENTER" layoutX="394.0" layoutY="14.0" prefHeight="68.0" prefWidth="200.0">
+         <children>
+            <ChoiceBox fx:id="options" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <Button layoutX="457.0" layoutY="189.0" mnemonicParsing="false" onAction="#DisplayCart" prefHeight="175.0" prefWidth="108.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Cart" />
+      <Button layoutX="41.0" layoutY="200.0" mnemonicParsing="false" onAction="#surfStores" prefHeight="68.0" prefWidth="150.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Select Store" />
+      <Button layoutX="254.0" layoutY="200.0" mnemonicParsing="false" onAction="#addFundsScreen" prefHeight="68.0" prefWidth="150.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Add Funds" />
+      <Button layoutX="41.0" layoutY="290.0" mnemonicParsing="false" onAction="#ShopByCategory" prefHeight="68.0" prefWidth="150.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Shop By Category" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="254.0" layoutY="290.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="150.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Today's Deals" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

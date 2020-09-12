@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.createStore">
+   <children>
+      <GridPane layoutX="116.0" layoutY="127.0" prefHeight="160.0" prefWidth="351.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="189.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="11.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="85.0" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Enter Store Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField id="storeName" fx:id="name" prefHeight="29.0" prefWidth="135.0" GridPane.columnIndex="1" />
+            <Label text="Enter Store Location:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField id="storeLoc" fx:id="loc" prefHeight="27.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Enter D Price:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Enter Max Quantity:" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField id="storeDPrice" fx:id="dPrice" prefHeight="27.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField id="storeMaxQuant" fx:id="maxQuant" prefHeight="27.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button layoutX="486.0" layoutY="24.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="47.0" prefWidth="77.0" styleClass="contact-us" stylesheets="@styles.css" text="Back" />
+      <Label layoutX="234.0" layoutY="89.0" text="Store Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="234.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleContinue" prefHeight="47.0" prefWidth="110.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Continue" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

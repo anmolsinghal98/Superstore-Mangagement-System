@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SignIn">
+   <children>
+      <Button layoutX="436.0" layoutY="24.0" mnemonicParsing="false" onAction="#contactUs" prefHeight="30.0" prefWidth="145.0" styleClass="contact-us" stylesheets="@styles.css" text="Back" />
+      <GridPane alignment="CENTER" layoutX="119.0" layoutY="138.0" prefHeight="167.0" prefWidth="363.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="145.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="183.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="User Name: ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="username" prefHeight="27.0" prefWidth="167.0" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Password: " GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <PasswordField fx:id="pass" prefHeight="8.0" prefWidth="181.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#forgotPass" styleClass="contact-us" stylesheets="@styles.css" text="Forgot Password?" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </GridPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="174.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="18.0" prefWidth="204.0" styleClass="contact-us" stylesheets="@styles.css" text="New Guest User? Sign Up" />
+      <Button layoutX="206.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="67.0" prefWidth="140.0" styleClass="choose-role-button" stylesheets="@styles.css" text="SIGN IN" />
+   </children>
+</AnchorPane>

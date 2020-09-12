@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="451.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.cartDisplayScreen">
+   <children>
+      <ChoiceBox fx:id="options" layoutX="426.0" layoutY="29.0" prefWidth="150.0" />
+      <Label layoutX="217.0" layoutY="99.0" text="Your Shopping Cart">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="450.0" layoutY="183.0" mnemonicParsing="false" onAction="#CheckOutScreen" prefHeight="159.0" prefWidth="117.0" styleClass="choose-role-button" stylesheets="@styles.css" text="Proceed To Check Out" textAlignment="CENTER" wrapText="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="461.0" layoutY="130.0" prefHeight="47.0" prefWidth="95.0" text="Total (Rs)" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Logo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="17.0" layoutY="154.0" prefHeight="258.0" prefWidth="372.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="180.0" text="Name Of Product" />
+          <TableColumn fx:id="quantity" prefWidth="87.0" text="Quantity" />
+            <TableColumn fx:id="price" prefWidth="103.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="456.0" layoutY="370.0" mnemonicParsing="false" onAction="#HandleContinue" styleClass="contact-us" stylesheets="@styles.css" text="Remove Item" />
+   </children>
+</AnchorPane>
